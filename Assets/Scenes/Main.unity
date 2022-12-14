@@ -294,7 +294,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -315,8 +315,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1141241208}
-  followSpeed: 10
+  followSpeed: 100
   offset: {x: 0, y: 1.5, z: 0}
+  mouseSensitivity: 4
 --- !u!1 &1066662668
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +409,7 @@ GameObject:
   - component: {fileID: 1141241206}
   - component: {fileID: 1141241205}
   - component: {fileID: 1141241204}
-  - component: {fileID: 1141241203}
+  - component: {fileID: 1141241209}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -416,23 +417,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1141241203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141241202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a478d8dc7d988d94f8c1653da5cc842b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 50
-  jumpForce: 5
-  sprintSpeed: 100
-  vaultHeight: 1
-  vaultForce: 5
 --- !u!54 &1141241204
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -528,3 +512,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1141241209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141241202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a478d8dc7d988d94f8c1653da5cc842b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 50
+  jumpForce: 5
+  sprintSpeed: 150
+  vaultHeight: 1
+  vaultForce: 5
